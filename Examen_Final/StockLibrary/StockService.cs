@@ -15,8 +15,6 @@ namespace StockLibrary
             FileStream? fs = null;
             List<Produit>? produits = new List<Produit>();
 
-            // TODO: CorrigerPrixAvantTaxes: compléter,  corriger et commenter
-
             fs = new FileStream(STOCK_PATH, FileMode.Open);
 
             //Ajout d'un try catch pour gèrer le exceptions de fichier
@@ -33,7 +31,7 @@ namespace StockLibrary
                     foreach (var produit in produits)
                     {
                         //Total des taxes applicable sur un produit
-                        double taxes = produit.TPS + produit.TVQ;
+                        double taxes = 1 + produit.TPS + produit.TVQ;
 
                         //Calcul du prix avant taxes dans le cas où les taxes ne sont pas de 0 (Éviter la division par 0)
                         if (taxes != 0)
@@ -46,10 +44,12 @@ namespace StockLibrary
                             produit.PrixAvantTaxes = produit.PrixApresTaxes;
                         }
 
+                        //Affichage du produit et de son prix avant taxes
                         Console.WriteLine("{0} {1} {2}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
                     }
                 }
             }
+            //Gestion des Exceptions
             catch (UnauthorizedAccessException e)
             {
                 Console.WriteLine(e);
@@ -88,10 +88,14 @@ namespace StockLibrary
                 {
                     foreach (var produit in produits)
                     {
-                        Console.WriteLine("{0} {1} {2}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
+                        //Affichage de tout les données reliées à un produits
+                        Console.WriteLine("{0} {1} {2} {3} {4} {5} {6} {7}", 
+                            produit.CodeProduit, produit.NomProduit, produit.Quantite,
+                            produit.PrixAvantTaxes, produit.PrixApresTaxes, produit.TPS, produit.TVQ);
                     }
                 }
             }
+            //Gestion des Exceptions
             catch (UnauthorizedAccessException e)
             {
                 Console.WriteLine(e);
