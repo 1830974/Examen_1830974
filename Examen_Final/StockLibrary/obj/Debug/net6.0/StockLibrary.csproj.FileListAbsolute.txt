@@ -1,0 +1,12 @@
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\bin\Debug\net6.0\StockLibrary.deps.json
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\bin\Debug\net6.0\StockLibrary.dll
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\bin\Debug\net6.0\StockLibrary.pdb
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.csproj.AssemblyReference.cache
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.GeneratedMSBuildEditorConfig.editorconfig
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.AssemblyInfoInputs.cache
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.AssemblyInfo.cs
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.csproj.CoreCompileInputs.cache
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.dll
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\refint\StockLibrary.dll
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\StockLibrary.pdb
+P:\Info\2023\Dev-App 2023\Examen_Final\StockLibrary\obj\Debug\net6.0\ref\StockLibrary.dll
