@@ -32,7 +32,21 @@ namespace StockLibrary
                 {
                     foreach (var produit in produits)
                     {
-                    Console.WriteLine("{0}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
+                        //Total des taxes applicable sur un produit
+                        double taxes = produit.TPS + produit.TVQ;
+
+                        //Calcul du prix avant taxes dans le cas où les taxes ne sont pas de 0 (Éviter la division par 0)
+                        if (taxes != 0)
+                        {
+                            produit.PrixAvantTaxes = produit.PrixApresTaxes / taxes;
+                        }
+                        else 
+                        {
+                            //Si les taxes étaient de 0, le prix après taxes est le même que celui avant taxes
+                            produit.PrixAvantTaxes = produit.PrixApresTaxes;
+                        }
+
+                        Console.WriteLine("{0} {1} {2}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
                     }
                 }
             }
@@ -74,7 +88,7 @@ namespace StockLibrary
                 {
                     foreach (var produit in produits)
                     {
-                        Console.WriteLine("{0}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
+                        Console.WriteLine("{0} {1} {2}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
                     }
                 }
             }
