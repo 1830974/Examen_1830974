@@ -1,0 +1,11 @@
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\bin\Debug\net6.0\SecurityLibrary.deps.json
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\bin\Debug\net6.0\SecurityLibrary.dll
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\bin\Debug\net6.0\SecurityLibrary.pdb
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\SecurityLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\SecurityLibrary.AssemblyInfoInputs.cache
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\SecurityLibrary.AssemblyInfo.cs
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\SecurityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\SecurityLibrary.dll
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\refint\SecurityLibrary.dll
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\SecurityLibrary.pdb
+C:\Users\efrancis.constant\Documents\Visual Studio 2022\Projets\SecurityLibrary\obj\Debug\net6.0\ref\SecurityLibrary.dll
