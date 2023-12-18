@@ -74,7 +74,6 @@ namespace StockLibrary
         {
             FileStream? fs = null;
 
-            // TODO: ListerLesProduits: compléter,  corriger et commenter
 
             fs = new FileStream(STOCK_PATH, FileMode.Open);
                
@@ -118,7 +117,6 @@ namespace StockLibrary
 
         public void MettreaJourMesProduits(List<Produit> mesProduits)
         {
-            // TODO: MettreaJourMesProduits: compléter,  corriger et commenter
 
             var options = new JsonSerializerOptions
             {
