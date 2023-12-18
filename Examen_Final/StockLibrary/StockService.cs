@@ -19,6 +19,9 @@ namespace StockLibrary
 
             fs = new FileStream(STOCK_PATH, FileMode.Open);
 
+            //Ajout d'un try catch pour gèrer le exceptions de fichier
+            try
+            {
                 produits = JsonSerializer.Deserialize<List<Produit>>(fs);
 
                 if (produits == null || produits.Count == 0)
@@ -29,9 +32,23 @@ namespace StockLibrary
                 {
                     foreach (var produit in produits)
                     {
-                    Console.WriteLine("{0} {1} {2}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
+                    Console.WriteLine("{0}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
                     }
                 }
+            }
+            catch (UnauthorizedAccessException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erreur Innatendue : " + e);
+            }
+
 
             return produits;
         }
@@ -44,6 +61,9 @@ namespace StockLibrary
 
             fs = new FileStream(STOCK_PATH, FileMode.Open);
                
+            //Ajout d'un try catch pour gèrer le exceptions de fichier
+            try
+            {
                 List<Produit> produits = JsonSerializer.Deserialize<List<Produit>>(fs);
 
                 if (produits == null || produits.Count == 0)
@@ -54,9 +74,25 @@ namespace StockLibrary
                 {
                     foreach (var produit in produits)
                     {
-                        Console.WriteLine("{0} {1} {2}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
+                        Console.WriteLine("{0}", produit.CodeProduit, produit.NomProduit, produit.PrixAvantTaxes);
                     }
                 }
+            }
+            catch (UnauthorizedAccessException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Erreur Innatendue : " + e);
+            }
+               
+
+
         }
 
         public void MettreaJourMesProduits(List<Produit> mesProduits)
